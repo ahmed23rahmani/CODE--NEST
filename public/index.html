@@ -15,14 +15,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <svg class="logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Nest shape -->
-                        <path d="M15 35 Q30 20 45 35 Q30 50 15 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
-                        <path d="M20 35 Q30 25 40 35 Q30 45 20 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
-                        <path d="M25 35 Q30 30 35 35 Q30 40 25 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
-                        <!-- Code tags -->
-                        <text x="30" y="38" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="bold">&lt;/&gt;</text>
-                    </svg>
+                    <img class="logo-img" src="assets/logo-code-nest.svg" alt="CODE NEST logo">
                     <span class="logo-text">CODE NEST</span>
                 </div>
                 
@@ -47,144 +40,138 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (clean layout with single image) -->
     <section class="hero" id="accueil">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">
-                        <span>Agile</span>
+                    <div class="hero-badges">
+                        <a href="#services" class="hero-badge-link">Agile</a>
                         <span class="separator">•</span>
-                        <span>Sur-mesure</span>
+                        <a href="#services" class="hero-badge-link">Sur-mesure</a>
                         <span class="separator">•</span>
-                        <span>Fiable</span>
+                        <a href="#services" class="hero-badge-link">Fiable</a>
                     </div>
-                    
-                    <h1 class="hero-title">
-                        Nous concevons vos sites, applications et logiciels — clés en main.
-                    </h1>
-                    
-                    <p class="hero-subtitle">
-                        Développement web, apps mobiles et formations pour accélérer votre transition digitale.
-                    </p>
-                    
+                    <h1 class="hero-title">Nous concevons vos sites,
+                        applications et logiciels
+                        — clés en main.</h1>
+                    <p class="hero-subtitle">Développement web, applications mobiles et solutions logicielles sur mesure.</p>
                     <div class="hero-cta">
-                        <button class="btn-primary btn-large">Voir nos services</button>
-                        <button class="btn-secondary btn-large">Nos réalisations</button>
+                        <a class="btn-primary btn-large" href="#realisations">Voir nos services</a>
+                        <a class="btn-secondary btn-large" href="#contact">Demander un devis</a>
                     </div>
-                    
-                    <div class="hero-features">
-                        <div class="feature-item">
-                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                            </svg>
-                            <span>Livraison rapide</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M9 12l2 2 4-4"/>
-                                <path d="M21 12c-1 0-3-1-3-3s2-3 3-3 3 1 3 3-2 3-3 3"/>
-                                <path d="M3 12c1 0 3-1 3-3s-2-3-3-3-3 1-3 3 2 3 3 3"/>
-                                <path d="M12 3c0 1-1 3-3 3s-3-2-3-3 1-3 3-3 3 2 3 3"/>
-                                <path d="M12 21c0-1 1-3 3-3s3 2 3 3-1 3-3 3-3-2-3-3"/>
-                            </svg>
-                            <span>Maintenance incluse</span>
-                        </div>
-                        <div class="feature-item">
-                            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-                            </svg>
-                            <span>Formations certifiantes</span>
-                        </div>
+                    <ul class="hero-features-list">
+                        <li class="feature-item">
+                            <span class="feature-icon-wrap">
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </span>
+                            Livraison rapide
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon-wrap">
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                            </span>
+                            Maintenance incluse
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon-wrap">
+                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2v20M2 12h20"/>
+                                </svg>
+                            </span>
+                            Formations certifiantes
+                        </li>
+                    </ul>
+                </div>
+                <div class="hero-visual hero-visual-simple">
+                    <img src="./images/hero-announcement.jpg" alt="CODE NEST - Professional Website" class="hero-simple-image" width="800" height="560" loading="eager" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&auto=format&fit=crop';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact Hero (style comme la 2ème image) -->
+    <section class="contact-hero" id="nous-contacter">
+        <div class="container">
+            <div class="contact-hero-grid">
+                <div class="contact-hero-text">
+                    <span class="contact-badge">Nous contacter</span>
+                    <h2 class="contact-hero-title">
+                        CODE NEST – À Votre
+                        <br>
+                        Écoute,
+                        <br>
+                        À Votre Service.
+                    </h2>
+                    <p class="contact-hero-subtitle">
+                        Besoin d’assistance ou d’un partenaire pour concrétiser vos projets ? Notre équipe vous accompagne avec des solutions adaptées et innovantes. Contactez-nous et transformons ensemble vos idées en réussite digitale.
+                    </p>
+                    <div class="contact-hero-ctas">
+                        <a href="#contact" class="btn-primary">Demande de devis</a>
+                        <a href="#contact" class="btn-secondary">Contactez-nous</a>
                     </div>
                 </div>
-                
-                <div class="hero-visual">
-                    <!-- Image d'annonce principale -->
-                    <div class="hero-announcement">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" alt="CODE NEST - Développement Web et Mobile" class="announcement-image">
-                        <div class="announcement-overlay">
-                            <div class="announcement-badge">NOUVEAU</div>
-                            <h3>Solutions Digitales Complètes</h3>
-                            <p>Web • Mobile • Formation</p>
-                        </div>
-                    </div>
-                    
-                    <div class="tech-background">
-                        <svg class="circuit-pattern" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <pattern id="circuit" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-                                    <path d="M0 20h40M20 0v40" stroke="#2EA6FF" stroke-width="0.5" opacity="0.1"/>
-                                    <circle cx="20" cy="20" r="1" fill="#2EA6FF" opacity="0.2"/>
-                                </pattern>
-                            </defs>
-                            <rect width="400" height="300" fill="url(#circuit)"/>
-                        </svg>
-                    </div>
-                    
-                    <div class="device-mockups">
-                        <div class="desktop-mockup">
-                            <div class="screen">
-                                <div class="screen-header">
-                                    <div class="screen-dots">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                                <div class="screen-content">
-                                    <div class="dashboard-preview">
-                                        <div class="dashboard-header">
-                                            <div class="dashboard-logo">CN</div>
-                                            <div class="dashboard-nav">
-                                                <span></span>
-                                                <span></span>
-                                                <span></span>
-                                            </div>
-                                        </div>
-                                        <div class="dashboard-stats">
-                                            <div class="stat-card"></div>
-                                            <div class="stat-card"></div>
-                                            <div class="stat-card"></div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="contact-hero-actions">
+                    <div class="action-grid">
+                        <a class="action-card" href="tel:+213658546209">
+                            <div class="action-icon action-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
                             </div>
-                        </div>
-                        
-                        <div class="mobile-mockup">
-                            <div class="phone-screen">
-                                <div class="app-header">
-                                    <div class="app-logo">CN</div>
-                                    <div class="app-title">Mobile App</div>
-                                </div>
-                                <div class="app-content">
-                                    <div class="user-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                                            <circle cx="12" cy="7" r="4"/>
-                                        </svg>
-                                    </div>
-                                    <div class="input-field"></div>
-                                    <div class="input-field"></div>
-                                    <div class="login-btn">LOGIN</div>
-                                </div>
+                            <div class="action-label">Téléphone</div>
+                        </a>
+                        <a class="action-card" href="https://maps.google.com/?q=Alger%2C%20Alg%C3%A9rie" target="_blank" rel="noopener">
+                            <div class="action-icon action-blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
                             </div>
-                        </div>
-                        
-                        <div class="tablet-mockup">
-                            <div class="tablet-screen">
-                                <div class="tablet-content">
-                                    <div class="tablet-grid">
-                                        <div class="grid-item"></div>
-                                        <div class="grid-item"></div>
-                                        <div class="grid-item"></div>
-                                        <div class="grid-item"></div>
-                                    </div>
-                                </div>
+                            <div class="action-label">Adresse</div>
+                        </a>
+                        <a class="action-card" href="mailto:code23nest@gmail.com">
+                            <div class="action-icon action-cyan">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                                    <path d="M3 7l9 6 9-6"/>
+                                </svg>
                             </div>
-                        </div>
+                            <div class="action-label">Adresse email</div>
+                        </a>
+                        <a class="action-card" href="#contact">
+                            <div class="action-icon action-orange">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 12h12"/>
+                                    <path d="M7 8l-4 4 4 4"/>
+                                    <rect x="15" y="6" width="6" height="12" rx="2"/>
+                                </svg>
+                            </div>
+                            <div class="action-label">Demande devis</div>
+                        </a>
+                        <a class="action-card" href="#contact">
+                            <div class="action-icon action-purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                                    <path d="M16 2v4M8 2v4M3 10h18"/>
+                                </svg>
+                            </div>
+                            <div class="action-label">Rendez-Vous</div>
+                        </a>
+                        <a class="action-card" href="#contact">
+                            <div class="action-icon action-gray">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M8 12h8"/>
+                                    <path d="M12 8v8"/>
+                                </svg>
+                            </div>
+                            <div class="action-label">Contact</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -613,12 +600,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <div class="logo">
-                        <svg class="logo-icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 35 Q30 20 45 35 Q30 50 15 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
-                            <path d="M20 35 Q30 25 40 35 Q30 45 20 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
-                            <path d="M25 35 Q30 30 35 35 Q30 40 25 35" stroke="#FFFFFF" stroke-width="2" fill="none"/>
-                            <text x="30" y="38" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="bold">&lt;/&gt;</text>
-                        </svg>
+                        <img class="logo-img" src="assets/logo-code-nest.svg" alt="CODE NEST logo">
                         <span class="logo-text">CODE NEST</span>
                     </div>
                     <p>Développement web, apps mobiles et formations pour accélérer votre transition digitale.</p>
